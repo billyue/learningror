@@ -1,4 +1,7 @@
 Everyone::Application.routes.draw do
+  get "tabs/show2"
+  get "state/filter"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,4 +56,8 @@ Everyone::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  get ':controller(/:action(/:id))'
+  post ':controller(/:action(/:id))'
+  root to: "state#filter"
+
 end
