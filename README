@@ -1,0 +1,4 @@
+v0.0
+Basic webpage:
+1) Get input of GeoLocation, and then store to DB.
+2) Output all the Geolocation
