@@ -1,4 +1,4 @@
 <h1>Users#index</h1>
-<% @users.each do |user| %>
-  <p><%= user.id %></p>
+<% @users.each do |u| %>
+  <p><a href="/photos/index/<%= u.id %>"><%= h(u.first_name) %> <%= h(u.last_name) %></a></p>
 <% end %>
