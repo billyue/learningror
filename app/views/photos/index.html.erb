@@ -7,6 +7,6 @@
   <h2>Comments</h2>
   <% ph.comments.each do |cm| %>
     <h3>Comment time <%= cm.date_time %> by <a href="/photos/index/<%= cm.user.id %>"><%= cm.user.first_name %> <%= cm.user.last_name %></a></h3> 
-    <p><%= cm.comment %></p>
+    <p><%= cm.comment.html_safe %></p>
   <% end %>
 <% end %>
