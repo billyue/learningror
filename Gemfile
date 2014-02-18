@@ -48,6 +48,4 @@ end
 # Enable ActiveRecord session store
 gem 'activerecord-session_store'
 
-# Rails 4 Authentication
-gem 'protected_attributes'
 
